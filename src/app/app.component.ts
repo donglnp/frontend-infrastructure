@@ -47,56 +47,32 @@ export class AppComponent {
             type: EFormFieldType.INPUT,
             label: 'ID 1',
             placeholder: 'Please Enter ID 1',
-            required: true,
-            errors: [
-              {
-                type: 'required',
-                message: 'Please Enter ID',
-              },
-            ],
           },
           {
             key: 'id2',
             type: EFormFieldType.INPUT,
             label: 'ID 2',
             placeholder: 'Please Enter ID 2',
-            required: true,
-            errors: [
-              {
-                type: 'required',
-                message: 'Please Enter ID',
-              },
-            ],
           },
           {
             key: 'id3',
             type: EFormFieldType.INPUT,
             label: 'ID 3',
             placeholder: 'Please Enter ID 3',
-            required: true,
-            errors: [
-              {
-                type: 'required',
-                message: 'Please Enter ID',
-              },
-            ],
           },
           {
             key: 'id4',
             type: EFormFieldType.INPUT,
             label: 'ID 4',
             placeholder: 'Please Enter ID 4',
-            required: true,
-            errors: [
-              {
-                type: 'required',
-                message: 'Please Enter ID',
-              },
-            ],
           },
         ],
       },
     ],
     primaryButtonLabel: 'Submit',
   };
+
+  public onSubmit($event: any) {
+    console.log($event);
+  }
 }

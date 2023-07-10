@@ -3,4 +3,8 @@ export enum EStateType {
   SECONDARY = 'secondary',
   TERTIARY = 'tertiary',
   QUATERNARY = 'quaternary',
+
+  // color
+  ACCENT = 'accent',
+  WARN = 'warn',
 }

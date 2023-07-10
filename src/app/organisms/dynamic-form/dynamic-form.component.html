@@ -15,14 +15,16 @@
     </ng-container>
   </div>
 
-  <div class="form-content">
-    <ng-container *ngIf="contentTemplate" [ngTemplateOutlet]="contentTemplate"></ng-container>
+  <div *ngIf="contentTemplate" class="form-content">
+    <ng-container [ngTemplateOutlet]="contentTemplate"></ng-container>
   </div>
 
   <div *ngIf="formInput?.primaryButtonLabel" class="form-actions">
-    <!-- <app-button [disabled]="isPrimaryDisabled()" [type]="formInput?.primaryButtonType">
-      {{ formInput?.primaryButtonLabel }}
-    </app-button> -->
+    <app-button
+      [disabled]="isPrimaryDisabled()"
+      [type]="formInput.primaryButtonType || EStateType.PRIMARY"
+      [label]="formInput.primaryButtonLabel || ''">
+    </app-button>
   </div>
 </ng-template>
 

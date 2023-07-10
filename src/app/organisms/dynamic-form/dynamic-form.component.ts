@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { Observable, OperatorFunction } from 'rxjs';
 import { BaseComponent } from 'src/app/components/base-component/base.component';
 import { EFormFieldType } from 'src/app/enums/form-field-type.enum';
+import { EStateType } from 'src/app/enums/state-type.enum';
 import { IFormField } from 'src/app/interfaces/form-field.interface';
 import { IFormInput } from 'src/app/interfaces/form-input.interface';
 
@@ -23,7 +24,9 @@ export class DynamicFormComponent extends BaseComponent implements OnChanges {
   @Output() secondaryEmitter = new EventEmitter<any>();
 
   public form!: FormGroup;
+
   public EFormFieldType = EFormFieldType;
+  public EStateType = EStateType;
 
   public isPrimaryLoading = false;
 
