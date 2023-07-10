@@ -1,0 +1,26 @@
+<mat-form-field appearance="fill">
+  <mat-label *ngIf="field?.label">{{ field.label }}</mat-label>
+  <div *ngIf="field">
+    <input
+      matInput
+      [formControl]="control"
+      [id]="field.key || ''"
+      [type]="field.inputType || 'text'"
+      [placeholder]="field.placeholder || ''"
+      [required]="field.required || false"
+      [minlength]="field.minLength || ''"
+      [maxlength]="field.maxLength || ''"
+      [pattern]="field.pattern || ''"
+      [attr.autocomplete]="'off'" />
+    <span matSuffix *ngIf="field?.suffix">{{ field.suffix }}</span>
+    <i *ngIf="field?.icon" class="clicked" [ngClass]="field.icon"></i>
+  </div>
+
+  <mat-error *ngIf="field?.errors?.length">
+    <ng-container *ngFor="let error of field.errors">
+      <ng-template [ngIf]="control?.hasError(error.type)">
+        <p>{{ error.message }}</p>
+      </ng-template>
+    </ng-container>
+  </mat-error>
+</mat-form-field>
