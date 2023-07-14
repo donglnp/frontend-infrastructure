@@ -1,6 +1,6 @@
 <mat-drawer-container class="example-container">
   <mat-drawer mode="side" opened>
-    <div *ngFor="let item of atoms" class="atom">
+    <div *ngFor="let item of atoms" class="atom" (click)="onClick(item)">
       {{ item }}
     </div>
   </mat-drawer>

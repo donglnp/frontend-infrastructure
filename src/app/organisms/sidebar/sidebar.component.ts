@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
+import { Router } from '@angular/router';
 import { BaseComponent } from 'src/app/components/base-component/base.component';
 
 @Component({
@@ -9,5 +10,13 @@ import { BaseComponent } from 'src/app/components/base-component/base.component'
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SidebarComponent extends BaseComponent {
-  public atoms = ['input', 'button'];
+  public atoms = ['forms', 'input', 'button'];
+
+  constructor(private router: Router) {
+    super();
+  }
+
+  public onClick(item: string): void {
+    this.router.navigate([`/${item}`]);
+  }
 }

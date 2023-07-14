@@ -1,4 +1,4 @@
-@import "../../../assets/scss/mixin";
+@import "../../../../assets/scss/mixin";
 
 :host {
   width: 100vw;
@@ -10,7 +10,7 @@
     width: 100%;
 
     app-header {
-    border: 1px solid blue;
+      border-bottom: 1px solid blue;
       height: 80px;
       width: 100%;
     }
@@ -23,7 +23,7 @@
     }
 
     app-footer {
-      border: 1px solid blue;
+      border-top: 1px solid blue;
       height: 80px;
       width: 100%;
     }
