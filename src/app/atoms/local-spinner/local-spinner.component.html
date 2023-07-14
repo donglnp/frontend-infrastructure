@@ -1,0 +1,4 @@
+<section class="local-spinner__section" [class.loading]="showSpinner">
+  <div *ngIf="showSpinner" class="local-spinner__wrapper"></div>
+  <ng-content></ng-content>
+</section>

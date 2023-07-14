@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Inject, LOCALE_ID } from '@angular/core';
 
 import { EFormFieldType } from './enums/form-field-type.enum';
 import { IFormInput } from './interfaces/form-input.interface';
@@ -71,6 +71,10 @@ export class AppComponent {
     ],
     primaryButtonLabel: 'Submit',
   };
+
+  constructor(@Inject(LOCALE_ID) private readonly locale: string) {
+    console.log(locale);
+  }
 
   public onSubmit($event: any) {
     console.log($event);
