@@ -1,0 +1,10 @@
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened>
+    <div *ngFor="let item of atoms" class="atom">
+      {{ item }}
+    </div>
+  </mat-drawer>
+  <mat-drawer-content>
+    <ng-content></ng-content>
+  </mat-drawer-content>
+</mat-drawer-container>

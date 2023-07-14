@@ -8,4 +8,6 @@ import { BaseComponent } from 'src/app/components/base-component/base.component'
   styleUrls: ['./sidebar.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SidebarComponent extends BaseComponent {}
+export class SidebarComponent extends BaseComponent {
+  public atoms = ['input', 'button'];
+}

@@ -10,6 +10,8 @@ import { IFormInput } from './interfaces/form-input.interface';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {
+  public formData: any;
+
   public formInput: IFormInput = {
     fields: [
       {
@@ -77,6 +79,6 @@ export class AppComponent {
   }
 
   public onSubmit($event: any) {
-    console.log($event);
+    this.formData = JSON.stringify($event);
   }
 }

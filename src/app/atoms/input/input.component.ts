@@ -13,7 +13,7 @@ export class InputComponent extends BaseComponent {
   @ViewChild('inputRef') inputRef!: ElementRef;
 
   @Input() field!: IInputFormField;
-  @Input() control: FormControl | any;
+  @Input() control: FormControl;
 
   public form!: FormGroup;
 

@@ -1,0 +1,31 @@
+@import "../../../assets/scss/mixin";
+
+:host {
+  width: 100vw;
+  height: 100vh;
+
+  .admin-template__section {
+    @include flex-center-column();
+    height: 100%;
+    width: 100%;
+
+    app-header {
+    border: 1px solid blue;
+      height: 80px;
+      width: 100%;
+    }
+
+    .content {
+      flex: 1;
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
+
+    app-footer {
+      border: 1px solid blue;
+      height: 80px;
+      width: 100%;
+    }
+  }
+}

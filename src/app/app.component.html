@@ -1,1 +1,4 @@
-<app-dynamic-form [formInput]="formInput" (primaryEmitter)="onSubmit($event)"> </app-dynamic-form>
+<app-admin-template>
+  <app-dynamic-form [formInput]="formInput" (primaryEmitter)="onSubmit($event)"> </app-dynamic-form>
+  <p>{{ formData }}</p>
+</app-admin-template>
