@@ -16,6 +16,10 @@ export class SidebarComponent extends BaseComponent {
     super();
   }
 
+  protected override onInit(): void {
+    // this.atoms = EComponentType
+  }
+
   public onClick(item: string): void {
     this.router.navigate([`/${item}`]);
   }
