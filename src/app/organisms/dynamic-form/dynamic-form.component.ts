@@ -1,11 +1,11 @@
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, OnChanges, Output, SimpleChanges, TemplateRef } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Observable, OperatorFunction } from 'rxjs';
-import { BaseComponent } from 'src/app/components/base-component/base.component';
-import { EFormFieldType } from 'src/app/enums/form-field-type.enum';
-import { EStateType } from 'src/app/enums/state-type.enum';
-import { IFormField } from 'src/app/interfaces/form-field.interface';
-import { IFormInput } from 'src/app/interfaces/form-input.interface';
+import { BaseComponent } from 'src/app/core/components/base-component/base.component';
+import { EFormFieldType } from 'src/app/core/enums/form-field-type.enum';
+import { EStateType } from 'src/app/core/enums/state-type.enum';
+import { IFormField } from 'src/app/core/interfaces/form-field.interface';
+import { IFormInput } from 'src/app/core/interfaces/form-input.interface';
 
 @Component({
   selector: 'app-dynamic-form',

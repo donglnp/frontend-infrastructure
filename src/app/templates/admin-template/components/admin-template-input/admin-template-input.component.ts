@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
-import { BaseComponent } from 'src/app/components/base-component/base.component';
-import { IInputFormField } from 'src/app/interfaces/form-field.interface';
+import { BaseComponent } from 'src/app/core/components/base-component/base.component';
+import { IInputFormField } from 'src/app/core/interfaces/form-field.interface';
 
 @Component({
   selector: 'app-admin-template-input',

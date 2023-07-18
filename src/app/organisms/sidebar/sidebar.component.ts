@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 import { Router } from '@angular/router';
-import { BaseComponent } from 'src/app/components/base-component/base.component';
+import { BaseComponent } from 'src/app/core/components/base-component/base.component';
 
 @Component({
   selector: 'app-sidebar',

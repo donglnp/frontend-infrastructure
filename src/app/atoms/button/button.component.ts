@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
 
-import { EStateType } from 'src/app/enums/state-type.enum';
+import { EStateType } from 'src/app/core/enums/state-type.enum';
 
 @Component({
   selector: 'app-button',

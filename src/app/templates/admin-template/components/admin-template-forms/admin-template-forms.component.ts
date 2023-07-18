@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 import { Validators } from '@angular/forms';
-import { BaseComponent } from 'src/app/components/base-component/base.component';
-import { EFormFieldType } from 'src/app/enums/form-field-type.enum';
-import { IFormInput } from 'src/app/interfaces/form-input.interface';
+import { BaseComponent } from 'src/app/core/components/base-component/base.component';
+import { EFormFieldType } from 'src/app/core/enums/form-field-type.enum';
+import { IFormInput } from 'src/app/core/interfaces/form-input.interface';
 
 @Component({
   selector: 'app-admin-template-forms',

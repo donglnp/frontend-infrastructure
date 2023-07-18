@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, ElementRef, Input, ViewChild } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
-import { BaseComponent } from 'src/app/components/base-component/base.component';
-import { IInputFormField } from 'src/app/interfaces/form-field.interface';
+import { BaseComponent } from 'src/app/core/components/base-component/base.component';
+import { IInputFormField } from 'src/app/core/interfaces/form-field.interface';
 
 @Component({
   selector: 'app-input[field]',

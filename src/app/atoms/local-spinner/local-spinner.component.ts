@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
-import { BaseComponent } from 'src/app/components/base-component/base.component';
-import { LocalSpinnerService } from 'src/app/services/local-spinner.service';
+import { BaseComponent } from 'src/app/core/components/base-component/base.component';
+import { LocalSpinnerService } from 'src/app/core/services/local-spinner.service';
 
 @Component({
   selector: 'app-local-spinner[componentId]',

@@ -1,7 +1,7 @@
 import { RouterModule, Routes } from '@angular/router';
 
 import { NgModule } from '@angular/core';
-import { EComponentType } from 'src/app/enums/component.enum';
+import { EComponentType } from 'src/app/core/enums/component.enum';
 import { AdminTemplateButtonComponent } from './components/admin-template-button/admin-template-button.component';
 import { AdminTemplateFormsComponent } from './components/admin-template-forms/admin-template-forms.component';
 import { AdminTemplateInputComponent } from './components/admin-template-input/admin-template-input.component';

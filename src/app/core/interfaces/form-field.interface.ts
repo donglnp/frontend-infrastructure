@@ -1,8 +1,8 @@
+import { TemplateRef } from '@angular/core';
+import { ValidatorFn } from '@angular/forms';
 import { EFormFieldInputType } from '../enums/form-field-input-type.enum';
 import { EFormFieldType } from '../enums/form-field-type.enum';
 import { IFormObservables } from './form-observables.interface';
-import { TemplateRef } from '@angular/core';
-import { ValidatorFn } from '@angular/forms';
 
 export interface IFormFieldError {
   // Type can be one of required, email, maxLength...

@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
-import { BaseComponent } from './components/base-component/base.component';
+import { BaseComponent } from './core/components/base-component/base.component';
 
 @Component({
   selector: 'app-root',
