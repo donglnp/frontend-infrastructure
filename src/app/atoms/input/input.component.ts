@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, ElementRef, Input, ViewChild } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, EventEmitter, Input, Output, ViewChild } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { BaseComponent } from 'src/app/core/components/base-component/base.component';
 import { IInputFormField } from 'src/app/core/interfaces/form-field.interface';
@@ -15,10 +15,16 @@ export class InputComponent extends BaseComponent {
   @Input() field!: IInputFormField;
   @Input() control: FormControl;
 
+  @Output() enterEmitter = new EventEmitter();
+
   public form!: FormGroup;
 
   constructor(private readonly formBuilder: FormBuilder) {
     super();
+  }
+
+  public onEnter() {
+    this.enterEmitter.emit(this.control.value);
   }
 
   protected override onInit(): void {

@@ -77,14 +77,6 @@
           }
         ]
       }
-    },
-    {
-      "files": [
-        "*.ts"
-      ],
-      "extends": [
-        "plugin:@ngrx/all"
-      ]
     }
   ]
 }

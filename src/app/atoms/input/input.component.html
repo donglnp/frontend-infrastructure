@@ -11,7 +11,8 @@
       [minlength]="field.minLength || ''"
       [maxlength]="field.maxLength || ''"
       [pattern]="field.pattern || ''"
-      [attr.autocomplete]="'off'" />
+      [attr.autocomplete]="'off'"
+      (keyup.enter)="onEnter()" />
     <span matSuffix *ngIf="field?.suffix">{{ field.suffix }}</span>
     <i *ngIf="field?.icon" class="clicked" [ngClass]="field.icon"></i>
   </div>

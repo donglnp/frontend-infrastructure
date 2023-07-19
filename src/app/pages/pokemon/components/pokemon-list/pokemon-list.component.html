@@ -1,0 +1,10 @@
+<section class="pokemon-list__section">
+  <app-search-box [query]="query$$()" (search)="onSearch($event)"></app-search-box>
+
+  <p *ngIf="isLoading$$()" class="center">Loading...</p>
+  <p *ngIf="!isLoading$$() && data$$().length === 0" class="center">No pokemon</p>
+
+  <div class="card-container">
+    <app-pokemon-item *ngFor="let item of data$$()" [item]="item"></app-pokemon-item>
+  </div>
+</section>

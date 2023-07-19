@@ -1,0 +1,17 @@
+:host {
+  .pokemon-item__article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+      cursor: zoom-in;
+      transition: all 1s;
+    }
+
+    img:hover {
+      transform: scale(1.5);
+    }
+  }
+}
