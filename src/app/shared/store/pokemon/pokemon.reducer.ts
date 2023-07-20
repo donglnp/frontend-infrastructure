@@ -1,10 +1,10 @@
 import { Action, createReducer, on } from '@ngrx/store';
 import { load, loadPokemonByKey, loadPokemonFail, loadPokemonSuccess } from './pokemon.actions';
 
-import { CardPokemon } from 'src/app/pages/pokemon/models/pokemon.model';
+import { ICardPokemon } from 'src/app/pages/pokemon/models/pokemon.model';
 
 export interface PokemonState {
-  pokemonList: CardPokemon[];
+  pokemonList: ICardPokemon[];
   isLoading: boolean;
   query: string;
   msg?: string;

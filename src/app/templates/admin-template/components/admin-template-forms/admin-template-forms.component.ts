@@ -81,6 +81,6 @@ export class AdminTemplateFormsComponent extends BaseComponent {
   };
 
   public onSubmit($event: any) {
-    this.formData = JSON.stringify($event);
+    this.formData = $event;
   }
 }
