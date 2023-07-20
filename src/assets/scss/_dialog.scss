@@ -1,0 +1,17 @@
+.cdk-overlay-container {
+  .backdrop--dialog__cdk {
+    background: black;
+
+    &.cdk-overlay-backdrop-showing {
+      opacity: 0.4;
+    }
+  }
+}
+
+.mat-mdc-dialog-container {
+  .mdc-dialog__container {
+   .mdc-dialog__surface {
+      border-radius: 40px;
+    }
+  }
+}

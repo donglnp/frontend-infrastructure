@@ -1,6 +1,6 @@
 import { Injectable, inject } from '@angular/core';
 import { Observable, from } from 'rxjs';
-import { CardPokemon, ParameterPokemon } from '../models/pokemon.model';
+import { ICardPokemon, IParameterPokemon } from '../models/pokemon.model';
 
 import { HttpClient } from '@angular/common/http';
 import { PokemonTCG } from 'pokemon-tcg-sdk-typescript';
@@ -9,12 +9,12 @@ import { PokemonTCG } from 'pokemon-tcg-sdk-typescript';
 export class PokemonService {
   private readonly httpClient = inject(HttpClient);
 
-  public getDataFirst(): Observable<CardPokemon[]> {
-    return this.httpClient.get('assets/data/pokemon-fetch.json') as Observable<CardPokemon[]>;
+  public getDataFirst(): Observable<ICardPokemon[]> {
+    return this.httpClient.get('assets/data/pokemon-fetch.json') as Observable<ICardPokemon[]>;
   }
 
-  public search(key: string): Observable<CardPokemon[]> {
-    let params: ParameterPokemon = {
+  public search(key: string): Observable<ICardPokemon[]> {
+    let params: IParameterPokemon = {
       q: `name:"*${key}*"`,
       orderBy: `-set.releaseDate`,
       page: 1,

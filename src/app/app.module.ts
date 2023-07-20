@@ -1,3 +1,5 @@
+import { MatDialogModule } from '@angular/material/dialog';
+
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -7,7 +9,7 @@ import { AppComponent } from './app.component';
 import { STORE_MODULE } from './shared/store/store.module';
 
 @NgModule({
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, HttpClientModule, ...STORE_MODULE],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, HttpClientModule, MatDialogModule, ...STORE_MODULE],
   declarations: [AppComponent],
   bootstrap: [AppComponent],
   // providers: [...STORE_PROVIDERS],

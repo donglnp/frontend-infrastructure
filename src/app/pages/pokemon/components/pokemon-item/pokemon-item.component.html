@@ -1,4 +1,3 @@
 <article class="pokemon-item__article">
-  <img [src]="item.images.large" [alt]="item.name + ' Photo'" />
-  <!-- <h3>{{ item.name }}</h3> -->
+  <img [src]="item.images.large" [alt]="item.name + ' Photo'" (click)="openDetail()" />
 </article>
